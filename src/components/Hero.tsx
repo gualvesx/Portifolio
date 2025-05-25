@@ -103,7 +103,7 @@ const Hero = () => {
               className="neon-border bg-transparent hover:bg-neon-blue/10 transition-all duration-300 group"
               asChild
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/gualvesx" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2 group-hover:text-neon-blue transition-colors" />
                 GitHub
               </a>
@@ -115,7 +115,7 @@ const Hero = () => {
               className="neon-border bg-transparent hover:bg-neon-purple/10 transition-all duration-300 group"
               asChild
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/gustavo-alves-761874362/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5 mr-2 group-hover:text-neon-purple transition-colors" />
                 LinkedIn
               </a>
@@ -127,7 +127,7 @@ const Hero = () => {
               className="neon-border bg-transparent hover:bg-neon-pink/10 transition-all duration-300 group"
               asChild
             >
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/guh.alvxs" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-5 h-5 mr-2 group-hover:text-neon-pink transition-colors" />
                 Instagram
               </a>
