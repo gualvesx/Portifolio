@@ -194,6 +194,7 @@ const ProjectsGrid = () => {
         {/* Load More Button */}
         <div className="text-center mt-12">
           <Button
+            href="https://github.com/gualvesx"
             variant="outline"
             size="lg"
             className="neon-border bg-transparent hover:bg-gradient-to-r hover:from-neon-blue hover:to-neon-purple hover:text-black transition-all duration-300"
