@@ -63,14 +63,6 @@ const EcoCityShowcase = () => {
                   allowFullScreen
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                {/* Fallback enquanto o vídeo carrega */}
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/20 to-neon-green/20 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="text-neon-green font-mono text-sm">
-                      {'>'} Iniciando demonstração...
-                    </div>
-                  </div>
-                </div>
               </div>
 
               {/* Hover Effect */}
