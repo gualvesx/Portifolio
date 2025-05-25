@@ -91,11 +91,12 @@ const EcoCityShowcase = () => {
                 </a>
               </Button>
               <Button
-                href="https://ecocity-801cc.web.app/
                 className="bg-gradient-to-r from-neon-green to-neon-blue text-black hover:from-neon-blue hover:to-neon-purple flex-1 animate-glitch"
               >
+              <a href="https://ecocity-801cc.web.app/" target="_blank" rel="noopener noreferrer">
                 Acessar Site
                 <ArrowRight className="w-4 h-4 ml-2" />
+               </a>
               </Button>
             </div>
           </div>
