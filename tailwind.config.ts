@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,15 +53,19 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Cyberpunk Theme Colors
+				neon: {
+					blue: '#00D4FF',
+					green: '#39FF14',
+					purple: '#BF00FF',
+					pink: '#FF007F',
+					yellow: '#FFFF00'
+				},
+				cyber: {
+					dark: '#0A0A0F',
+					darker: '#050507',
+					grid: '#1A1A2E',
+					accent: '#16213E'
 				}
 			},
 			borderRadius: {
@@ -84,11 +89,54 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow-pulse': {
+					'0%, 100%': {
+						opacity: '1',
+						filter: 'drop-shadow(0 0 20px currentColor)'
+					},
+					'50%': {
+						opacity: '0.8',
+						filter: 'drop-shadow(0 0 30px currentColor)'
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glitch': {
+					'0%': { transform: 'translate(0)' },
+					'20%': { transform: 'translate(-2px, 2px)' },
+					'40%': { transform: 'translate(-2px, -2px)' },
+					'60%': { transform: 'translate(2px, 2px)' },
+					'80%': { transform: 'translate(2px, -2px)' },
+					'100%': { transform: 'translate(0)' }
+				},
+				'typing': {
+					'from': { width: '0' },
+					'to': { width: '100%' }
+				},
+				'blink': {
+					'50%': { borderColor: 'transparent' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'glitch': 'glitch 0.3s ease-in-out infinite',
+				'typing': 'typing 3.5s steps(40, end)',
+				'blink': 'blink 1s step-end infinite'
+			},
+			fontFamily: {
+				'mono': ['JetBrains Mono', 'Fira Code', 'monospace'],
+				'cyber': ['Orbitron', 'system-ui', 'sans-serif']
+			},
+			backgroundImage: {
+				'cyber-grid': 'linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px)',
+				'neon-gradient': 'linear-gradient(45deg, #00D4FF, #BF00FF, #39FF14)',
+				'glitch-gradient': 'linear-gradient(45deg, #FF007F, #00D4FF, #39FF14, #BF00FF)'
 			}
 		}
 	},
