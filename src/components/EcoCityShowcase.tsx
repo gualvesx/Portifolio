@@ -66,9 +66,6 @@ const EcoCityShowcase = () => {
                 {/* Fallback enquanto o vídeo carrega */}
                 <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/20 to-neon-green/20 flex items-center justify-center">
                   <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto bg-gradient-to-br from-neon-green via-neon-blue to-neon-purple rounded-full flex items-center justify-center animate-float">
-                      <div className="text-4xl font-cyber font-bold text-white">EC</div>
-                    </div>
                     <div className="text-neon-green font-mono text-sm">
                       {'>'} Iniciando demonstração...
                     </div>
@@ -83,7 +80,7 @@ const EcoCityShowcase = () => {
                     size="sm" 
                     className="w-full bg-neon-blue text-black hover:bg-neon-green transition-colors"
                   >
-                    Visualizar
+                    EcoCity
                   </Button>
                 </div>
               </div>
