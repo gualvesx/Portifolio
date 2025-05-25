@@ -93,7 +93,7 @@ const EcoCityShowcase = () => {
                 className="neon-border bg-transparent hover:bg-neon-blue/10 flex-1"
                 asChild
               >
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/EcoCity-GG/EcoCity" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2" />
                   Código Fonte
                 </a>
@@ -101,8 +101,10 @@ const EcoCityShowcase = () => {
               <Button
                 className="bg-gradient-to-r from-neon-green to-neon-blue text-black hover:from-neon-blue hover:to-neon-purple flex-1 animate-glitch"
               >
+              <a href="https://ecocity-801cc.web.app/" target="_blank" rel="noopener noreferrer">
                 Acessar Site
                 <ArrowRight className="w-4 h-4 ml-2" />
+               </a>
               </Button>
             </div>
           </div>
