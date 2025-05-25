@@ -137,6 +137,7 @@ const Hero = () => {
           {/* CTA Button */}
           <div className="pt-8">
             <Button
+              href="#ecocity"
               size="lg"
               className="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink text-black font-bold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 animate-glow-pulse"
             >
