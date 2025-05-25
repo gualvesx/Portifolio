@@ -53,32 +53,25 @@ const EcoCityShowcase = () => {
           <div className="relative">
             <div className="terminal-window p-6 h-96 overflow-hidden relative group">
               {/* Video Preview */}
-              <div className="absolute inset-0 rounded-lg overflow-hidden">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/8UkoWFrvot0?autoplay=1&mute=1&loop=1&playlist=8UkoWFrvot0"
-                  title="EcoCity Demo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                {/* Fallback enquanto o vídeo carrega */}
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/20 to-neon-green/20 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto bg-gradient-to-br from-neon-green via-neon-blue to-neon-purple rounded-full flex items-center justify-center animate-float">
-                      <div className="text-4xl font-cyber font-bold text-white">EC</div>
-                    </div>
-                    <div className="text-neon-green font-mono text-sm">
-                      {'>'} Iniciando demonstração...
-                    </div>
+              <div className="absolute inset-4 bg-gradient-to-br from-neon-blue/20 to-neon-green/20 rounded-lg flex items-center justify-center">
+                <div className="text-center space-y-4">
+                  <div className="w-32 h-32 mx-auto bg-gradient-to-br from-neon-green via-neon-blue to-neon-purple rounded-full flex items-center justify-center animate-float">
+                    <div className="text-4xl font-cyber font-bold text-white">EC</div>
+                  </div>
+                  <div className="text-neon-green font-mono text-sm">
+                    {'>'} Vídeo demonstrativo carregando...
+                  </div>
+                  <div className="flex gap-2 justify-center">
+                    {[1, 2, 3].map((i) => (
+                      <div 
+                        key={i} 
+                        className="w-2 h-8 bg-neon-blue rounded animate-pulse"
+                        style={{ animationDelay: `${i * 0.2}s` }}
+                      />
+                    ))}
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
 
               {/* Hover Effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-cyber-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
