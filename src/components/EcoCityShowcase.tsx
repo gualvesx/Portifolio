@@ -8,26 +8,30 @@ const EcoCityShowcase = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const technologies = [
-    { name: 'React.js', color: 'text-neon-blue' },
-    { name: 'Node.js', color: 'text-neon-green' },
-    { name: 'IoT Sensors', color: 'text-neon-purple' },
-    { name: 'MongoDB', color: 'text-neon-yellow' },
-    { name: 'Socket.io', color: 'text-neon-pink' },
-    { name: 'TailwindCSS', color: 'text-neon-blue' }
+    { name: 'Cloud', color: 'text-neon-blue' },
+    { name: 'AWS', color: 'text-neon-green' },
+    { name: 'Firebase', color: 'text-neon-purple' },
+    { name: 'TypeScript', color: 'text-neon-yellow' },
+    { name: 'JSX', color: 'text-neon-pink' },
+    { name: 'SCSS', color: 'text-neon-blue' },
+    { name: 'Kotlin', color: 'text-neon-green' },
+    { name: 'Vite', color: 'text-neon-purple' },
+    { name: 'TailwindCSS', color: 'text-neon-yellow' },
+    { name: 'Node.js', color: 'text-neon-pink' }
   ];
 
   const challenges = [
     {
-      command: '$ npm install sustainability',
-      solution: 'Implementação de sensores IoT para monitoramento em tempo real'
+      command: '$ aws deploy --sustainability',
+      solution: 'Implementação de arquitetura cloud para monitoramento sustentável'
     },
     {
-      command: '$ git commit -m "optimize energy consumption"',
-      solution: 'Algoritmos de ML para predição e otimização energética'
+      command: '$ firebase deploy --eco-features',
+      solution: 'Algoritmos de otimização energética com cloud functions'
     },
     {
-      command: '$ docker deploy smart-city',
-      solution: 'Arquitetura escalável para gerenciar milhares de dispositivos'
+      command: '$ kotlin build --smart-city',
+      solution: 'Aplicativo mobile para gerenciar dispositivos IoT da cidade'
     }
   ];
 
@@ -42,7 +46,7 @@ const EcoCityShowcase = () => {
           <div className="w-32 h-1 bg-gradient-to-r from-neon-green to-neon-blue mx-auto rounded-full"></div>
           <p className="text-xl text-gray-300 mt-6 max-w-3xl mx-auto">
             Uma plataforma revolucionária para cidades inteligentes e sustentáveis, 
-            integrando IoT, IA e blockchain para otimizar recursos urbanos.
+            integrando Cloud Computing, IoT e IA para otimizar recursos urbanos.
           </p>
         </div>
 
@@ -50,14 +54,14 @@ const EcoCityShowcase = () => {
           {/* Project Preview */}
           <div className="relative">
             <div className="terminal-window p-6 h-96 overflow-hidden relative group">
-              {/* Simulated 3D Preview */}
+              {/* Video Preview */}
               <div className="absolute inset-4 bg-gradient-to-br from-neon-blue/20 to-neon-green/20 rounded-lg flex items-center justify-center">
                 <div className="text-center space-y-4">
                   <div className="w-32 h-32 mx-auto bg-gradient-to-br from-neon-green via-neon-blue to-neon-purple rounded-full flex items-center justify-center animate-float">
                     <div className="text-4xl font-cyber font-bold text-white">EC</div>
                   </div>
                   <div className="text-neon-green font-mono text-sm">
-                    {'>'} Simulação 3D da cidade carregando...
+                    {'>'} Vídeo demonstrativo carregando...
                   </div>
                   <div className="flex gap-2 justify-center">
                     {[1, 2, 3].map((i) => (
@@ -78,7 +82,7 @@ const EcoCityShowcase = () => {
                     size="sm" 
                     className="w-full bg-neon-blue text-black hover:bg-neon-green transition-colors"
                   >
-                    Ver Demo Interativo
+                    Visualizar
                   </Button>
                 </div>
               </div>
@@ -99,7 +103,7 @@ const EcoCityShowcase = () => {
               <Button
                 className="bg-gradient-to-r from-neon-green to-neon-blue text-black hover:from-neon-blue hover:to-neon-purple flex-1 animate-glitch"
               >
-                Acessar Deploy
+                Acessar Site
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
@@ -161,8 +165,8 @@ const EcoCityShowcase = () => {
                     <ul className="text-sm text-gray-300 space-y-1 font-mono">
                       <li>• 40% redução no consumo energético</li>
                       <li>• 10,000+ dispositivos IoT conectados</li>
-                      <li>• 15 cidades piloto implementadas</li>
-                      <li>• 500GB de dados processados diariamente</li>
+                      <li>• Arquitetura 100% cloud (AWS)</li>
+                      <li>• Interface mobile desenvolvida em Kotlin</li>
                     </ul>
                   </div>
                 </div>

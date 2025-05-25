@@ -41,25 +41,16 @@ const ProjectsGrid = () => {
     },
     {
       id: 3,
-      title: 'GreenChain',
-      description: 'Blockchain para rastreamento de carbono e certificação de produtos sustentáveis.',
-      technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum'],
-      image: '/api/placeholder/400/250',
-      github: 'https://github.com',
-      category: 'Blockchain'
-    },
-    {
-      id: 4,
       title: 'SmartHome IoT',
       description: 'Sistema completo de automação residencial com controle via app e comandos de voz.',
       technologies: ['Arduino', 'React Native', 'MQTT', 'Firebase'],
       image: '/api/placeholder/400/250',
       github: 'https://github.com',
       demo: 'https://smarthome.com',
-      category: 'IoT'
+      category: 'Web'
     },
     {
-      id: 5,
+      id: 4,
       title: 'CodeMentor AI',
       description: 'Assistente de programação com IA para code review e sugestões de otimização.',
       technologies: ['Python', 'OpenAI', 'Docker', 'PostgreSQL'],
@@ -68,18 +59,28 @@ const ProjectsGrid = () => {
       category: 'AI'
     },
     {
-      id: 6,
+      id: 5,
       title: 'EcoTransport',
       description: 'App de mobilidade urbana sustentável com rotas otimizadas e pegada de carbono.',
       technologies: ['React Native', 'Google Maps', 'Node.js', 'MongoDB'],
       image: '/api/placeholder/400/250',
       github: 'https://github.com',
       demo: 'https://ecotransport.com',
-      category: 'Mobile'
+      category: 'Web'
+    },
+    {
+      id: 6,
+      title: 'CloudWatch Dashboard',
+      description: 'Sistema de monitoramento cloud com métricas em tempo real e alertas automáticos.',
+      technologies: ['AWS', 'TypeScript', 'CloudWatch', 'Lambda'],
+      image: '/api/placeholder/400/250',
+      github: 'https://github.com',
+      demo: 'https://cloudwatch.com',
+      category: 'AI'
     }
   ];
 
-  const filters = ['all', 'AI', 'Web', 'Blockchain', 'IoT', 'Mobile'];
+  const filters = ['all', 'AI', 'Web'];
 
   const filteredProjects = selectedFilter === 'all' 
     ? projects 

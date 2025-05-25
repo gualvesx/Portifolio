@@ -31,7 +31,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-cyber font-bold text-neon-blue">
-              {'<'} JS {' />'}
+              Portfolio.Gu
             </div>
             <div className="hidden md:flex gap-8 font-mono">
               <a href="#home" className="text-gray-300 hover:text-neon-blue transition-colors">
@@ -72,10 +72,10 @@ const Index = () => {
           <div className="font-mono text-sm space-y-2">
             <div className="text-neon-green">$ git log --oneline</div>
             <div className="text-gray-400">
-              Made with ❤️ and lots of ☕ by João Silva
+              Made with ❤️ and lots of ☕ by Gustavo Alves
             </div>
             <div className="text-gray-400">
-              © 2024 - Construindo o futuro, uma linha de código por vez
+              © 2024 - Construindo o futuro com cloud computing, uma linha de código por vez
             </div>
           </div>
         </div>
@@ -102,33 +102,33 @@ const Index = () => {
             
             <div className="font-mono text-sm space-y-2">
               <div className="text-neon-green">$ whoami</div>
-              <div className="text-white">João Silva - Digital Architect & Sustainability Enthusiast</div>
+              <div className="text-white">Gustavo Alves - Cloud Architect & Sustainability Enthusiast</div>
               
               <div className="text-neon-blue">$ cat fun-facts.json</div>
               <div className="text-gray-300 pl-4">
                 {JSON.stringify({
-                  "coffee_consumed": "∞ cups",
-                  "lines_of_code": "500,000+",
-                  "bugs_fixed": "countless",
-                  "dreams": "building a sustainable digital future",
-                  "favorite_tech": ["React", "Node.js", "Arduino", "AI"],
-                  "super_power": "turning coffee into code",
-                  "motto": "Code for a better world"
+                  "age": "17 years",
+                  "education": "SENAI - Análise e Desenvolvimento de Sistemas",
+                  "achievement": "10º lugar SPSkills Cloud Computing",
+                  "projects_created": "EcoCity + others",
+                  "favorite_tech": ["Cloud", "AWS", "TypeScript", "Kotlin"],
+                  "super_power": "turning coffee into cloud solutions",
+                  "motto": "Building sustainable future with cloud computing"
                 }, null, 2)}
               </div>
               
               <div className="text-neon-purple">$ echo $PHILOSOPHY</div>
               <div className="text-gray-300">
-                "Technology should serve humanity and preserve our planet"
+                "Technology should serve humanity and preserve our planet through cloud innovation"
               </div>
               
               <div className="text-neon-yellow">$ history | tail -5</div>
               <div className="text-gray-400 space-y-1">
-                <div>git commit -m "launch EcoCity platform"</div>
+                <div>aws deploy --project ecocity</div>
                 <div>npm run build:sustainable-future</div>
-                <div>docker deploy smart-city-solutions</div>
-                <div>yarn add hope-for-tomorrow</div>
-                <div>git push origin main --force-green-tech</div>
+                <div>kotlin compile mobile-app</div>
+                <div>git commit -m "SPSkills competition ready"</div>
+                <div>firebase deploy --eco-features</div>
               </div>
               
               <div className="text-neon-green animate-pulse">$ █</div>

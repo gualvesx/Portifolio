@@ -7,47 +7,47 @@ const AboutSection = () => {
 
   const timeline = [
     {
-      year: '2018',
-      title: 'Primeiro "Hello World"',
-      description: 'Descobri minha paixão pela programação criando meu primeiro site HTML/CSS.',
-      icon: '🌱',
-      tech: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-      year: '2020',
-      title: 'Full-Stack Developer',
-      description: 'Mergulhei no desenvolvimento web com React e Node.js, criando aplicações completas.',
-      icon: '🚀',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express']
-    },
-    {
-      year: '2022',
-      title: 'IoT & Sustainability',
-      description: 'Especializei-me em IoT e comecei a desenvolver soluções para sustentabilidade.',
-      icon: '🌍',
-      tech: ['Arduino', 'Raspberry Pi', 'MQTT', 'Python']
+      year: '2023',
+      title: 'Início dos Estudos no SENAI',
+      description: 'Comecei o curso de Análise e Desenvolvimento de Sistemas no SENAI, iniciando minha jornada na programação.',
+      icon: '🎓',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Fundamentos']
     },
     {
       year: '2023',
-      title: 'EcoCity Launch',
-      description: 'Lancei o EcoCity em hackathon nacional, ganhando 1º lugar na categoria sustentabilidade.',
+      title: 'Entrada na Olimpíada SPSkills',
+      description: 'Participei da olimpíada de cloud do SPSkills modalidade 53, com workshops preparatórios até novembro.',
       icon: '🏆',
-      tech: ['React', 'IoT', 'Machine Learning', 'Blockchain']
+      tech: ['Cloud Computing', 'AWS', 'Workshops', 'Competição']
+    },
+    {
+      year: '2023',
+      title: '10º Lugar no Estadual',
+      description: 'Conquistei a 10ª posição no estadual da olimpíada de cloud, demonstrando meu conhecimento em tecnologias cloud.',
+      icon: '🥉',
+      tech: ['AWS', 'Cloud Architecture', 'Problem Solving', 'Performance']
     },
     {
       year: '2024',
-      title: 'Tech for Good',
-      description: 'Focando em tecnologias que impactam positivamente o meio ambiente e a sociedade.',
-      icon: '💡',
-      tech: ['AI', 'Blockchain', 'Green Tech', 'Clean Code']
+      title: 'Continuação na Olimpíada',
+      description: 'Continuei participando da olimpíada em 2024, aprimorando ainda mais minhas habilidades em cloud computing.',
+      icon: '☁️',
+      tech: ['Advanced Cloud', 'AWS Services', 'DevOps', 'Automation']
+    },
+    {
+      year: '2024',
+      title: 'Criação do EcoCity',
+      description: 'Iniciei o desenvolvimento do projeto EcoCity, uma plataforma sustentável para cidades inteligentes.',
+      icon: '🌱',
+      tech: ['TypeScript', 'Kotlin', 'Firebase', 'Sustainability']
     }
   ];
 
   const skills = [
-    { category: 'Frontend', items: ['React', 'Vue.js', 'TypeScript', 'TailwindCSS'], color: 'text-neon-blue' },
-    { category: 'Backend', items: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB'], color: 'text-neon-green' },
-    { category: 'DevOps', items: ['Docker', 'AWS', 'CI/CD', 'Kubernetes'], color: 'text-neon-purple' },
-    { category: 'IoT & AI', items: ['Arduino', 'TensorFlow', 'MQTT', 'Computer Vision'], color: 'text-neon-yellow' }
+    { category: 'Cloud', items: ['AWS', 'Firebase', 'Cloud Architecture', 'DevOps'], color: 'text-neon-blue' },
+    { category: 'Frontend', items: ['TypeScript', 'JSX', 'SCSS', 'TailwindCSS'], color: 'text-neon-green' },
+    { category: 'Backend', items: ['Node.js', 'Kotlin', 'APIs', 'Databases'], color: 'text-neon-purple' },
+    { category: 'Tools', items: ['Vite', 'Git', 'Docker', 'VS Code'], color: 'text-neon-yellow' }
   ];
 
   return (
@@ -69,7 +69,7 @@ const AboutSection = () => {
             <div className="relative mx-auto w-64 h-64">
               <div className="w-full h-full bg-gradient-to-br from-neon-blue via-neon-purple to-neon-green rounded-full flex items-center justify-center relative overflow-hidden group">
                 <div className="text-8xl font-cyber font-bold text-white animate-float">
-                  JS
+                  GA
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/10 group-hover:to-white/20 transition-all duration-300"></div>
               </div>
@@ -90,23 +90,21 @@ const AboutSection = () => {
               <div className="space-y-4 text-gray-300">
                 <p className="font-mono text-sm">
                   <span className="text-neon-green"># </span>
-                  Olá! Sou João Silva, um desenvolvedor apaixonado por criar 
-                  <span className="text-neon-blue"> soluções tecnológicas sustentáveis</span>.
+                  Olá! Sou Gustavo Alves, 17 anos, 
+                  <span className="text-neon-blue"> aluno do SENAI</span> e desenvolvedor aprendiz.
                 </p>
                 
                 <p className="font-mono text-sm">
                   <span className="text-neon-green">## </span>
-                  Minha missão é usar a tecnologia para construir um futuro mais verde e inteligente. 
-                  Especializo-me em <span className="text-neon-purple">desenvolvimento full-stack</span>, 
-                  <span className="text-neon-yellow"> IoT</span> e 
-                  <span className="text-neon-pink"> machine learning</span>.
+                  Sou um <span className="text-neon-purple">profissional em cloud computing</span>,
+                  <span className="text-neon-yellow"> apoiador da ecologia</span> e
+                  <span className="text-neon-pink"> interessado em sustentabilidade</span>.
                 </p>
 
                 <p className="font-mono text-sm">
                   <span className="text-neon-green">### </span>
-                  Quando não estou codando, você pode me encontrar explorando novas tecnologias, 
-                  contribuindo para projetos open source ou planejando a próxima ideia 
-                  que pode mudar o mundo.
+                  Participei da olimpíada de cloud do SPSkills, conquistando o 10º lugar estadual. 
+                  Minha missão é usar tecnologia para criar um futuro mais verde e inteligente.
                 </p>
               </div>
             </div>
@@ -191,13 +189,13 @@ const AboutSection = () => {
                   $ whoami
                 </div>
                 <div className="text-white">
-                  Full-Stack Developer | Sustainability Advocate | Future Builder
+                  Cloud Developer | SENAI Student | Sustainability Advocate | 17 years
                 </div>
                 <div className="text-neon-blue">
-                  $ echo "Always learning, always growing" 
+                  $ echo "Construindo o futuro com cloud computing" 
                 </div>
                 <div className="text-gray-400">
-                  Always learning, always growing
+                  Construindo o futuro com cloud computing
                 </div>
               </div>
             </div>

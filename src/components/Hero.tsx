@@ -9,9 +9,10 @@ const Hero = () => {
   const [showCursor, setShowCursor] = useState(true);
   
   const texts = [
-    'Full-Stack Developer',
+    'Cloud Developer',
     'Sustainability Tech Enthusiast', 
     'EcoCity Creator',
+    'AWS Specialist',
     'Future Builder'
   ];
 
@@ -67,12 +68,12 @@ const Hero = () => {
           <div className="relative">
             <h1 
               className="text-6xl md:text-8xl font-cyber font-black text-white glitch-text relative"
-              data-text="João Silva"
+              data-text="Gustavo Alves"
             >
-              João Silva
+              Gustavo Alves
             </h1>
             <div className="absolute inset-0 text-6xl md:text-8xl font-cyber font-black text-neon-blue opacity-20 blur-sm">
-              João Silva
+              Gustavo Alves
             </div>
           </div>
 
@@ -88,8 +89,10 @@ const Hero = () => {
           {/* Subtitle */}
           <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Transformando ideias em{' '}
-            <span className="text-neon-blue neon-text">código sustentável</span>{' '}
-            para um futuro melhor. Especialista em React, Node.js e IoT.
+            <span className="text-neon-blue neon-text">soluções cloud sustentáveis</span>{' '}
+            para um futuro melhor. Especialista em AWS, TypeScript e Cloud Computing.
+            <br />
+            <span className="text-neon-green">🏆 10º lugar na Olimpíada de Cloud SPSkills</span>
           </p>
 
           {/* Social Links */}
@@ -155,10 +158,10 @@ const Hero = () => {
           <span className="text-gray-400 text-sm ml-4">terminal</span>
         </div>
         <div className="text-neon-green text-sm space-y-1">
-          <div>{'>'} git clone portfolio.git</div>
+          <div>{'>'} aws configure</div>
           <div>{'>'} npm run dev</div>
-          <div>{'>'} echo "Welcome to my digital universe"</div>
-          <div className="text-neon-blue animate-pulse">{'>'} exploring projects...</div>
+          <div>{'>'} echo "Portfolio.Gu - Cloud Solutions"</div>
+          <div className="text-neon-blue animate-pulse">{'>'} exploring cloud projects...</div>
         </div>
       </div>
     </section>
