@@ -13,8 +13,6 @@ const EcoCityShowcase = () => {
     { name: 'Firebase', color: 'text-neon-purple' },
     { name: 'TypeScript', color: 'text-neon-yellow' },
     { name: 'JSX', color: 'text-neon-pink' },
-    { name: 'SCSS', color: 'text-neon-blue' },
-    { name: 'Kotlin', color: 'text-neon-green' },
     { name: 'Vite', color: 'text-neon-purple' },
     { name: 'TailwindCSS', color: 'text-neon-yellow' },
     { name: 'Node.js', color: 'text-neon-pink' }
@@ -46,7 +44,7 @@ const EcoCityShowcase = () => {
           <div className="w-32 h-1 bg-gradient-to-r from-neon-green to-neon-blue mx-auto rounded-full"></div>
           <p className="text-xl text-gray-300 mt-6 max-w-3xl mx-auto">
             Uma plataforma revolucionária para cidades inteligentes e sustentáveis, 
-            integrando Cloud Computing, IoT e IA para otimizar recursos urbanos.
+            integrando Cloud Computing, Leaflet (Mapa Open Source) e Tecnologias para otimizar recursos urbanos.
           </p>
         </div>
 
@@ -163,10 +161,10 @@ const EcoCityShowcase = () => {
                   <div className="terminal-window p-4">
                     <h4 className="text-neon-yellow font-mono mb-2">📊 Impacto:</h4>
                     <ul className="text-sm text-gray-300 space-y-1 font-mono">
-                      <li>• 40% redução no consumo energético</li>
-                      <li>• 10,000+ dispositivos IoT conectados</li>
-                      <li>• Arquitetura 100% cloud (AWS)</li>
-                      <li>• Interface mobile desenvolvida em Kotlin</li>
+                      <li>• Auxilio nos diversos discartes</li>
+                      <li>• Cidade Sustentável</li>
+                      <li>• Mapa Ecológico</li>
+                      <li>• Fácil acesso a Eventos</li>
                     </ul>
                   </div>
                 </div>
