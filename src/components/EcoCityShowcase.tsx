@@ -63,6 +63,7 @@ const EcoCityShowcase = () => {
                         allowFullScreen
                         className="absolute inset-0 w-full h-full object-cover"
                       />
+                </div>
 
               {/* Hover Effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-cyber-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
