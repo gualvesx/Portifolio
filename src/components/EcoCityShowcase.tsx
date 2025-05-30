@@ -56,8 +56,8 @@ const EcoCityShowcase = () => {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/8UkoWFrvot0?autoplay=1&mute=1&loop=1&playlist=8UkoWFrvot00"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/8UkoWFrvot0?autoplay=1&mute=1&loop=1&playlist=8UkoWFrvot06"
+                title="EcoCity - Iniciativa Privada"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
