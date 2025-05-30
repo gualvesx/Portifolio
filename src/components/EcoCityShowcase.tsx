@@ -53,16 +53,16 @@ const EcoCityShowcase = () => {
             <div className="terminal-window p-6 h-96 overflow-hidden relative group">
               {/* Video Preview */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
-              <iframe
-                        width="100%"
-                        height="100%"
-                        src="https://youtu.be/khqovYBbZVU?si=NY82Jx67nIA8ZKYL?loop=1&playlist=0"
-                        title="EcoCity - Iniciativa Privada"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="absolute inset-0 w-full h-full object-cover"
-                      />
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/khqovYBbZVU?si=Zbui-LQHnHhJX4GM?autoplay=1&loop=1&playlist=uL4aIqSj930"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
                 </div>
 
               {/* Hover Effect */}
