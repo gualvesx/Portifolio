@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -92,7 +91,6 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
           <div className="terminal-window p-8">
             <div className="flex items-center mb-6">
               <div className="flex gap-2">
@@ -173,7 +171,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Social Links & Info */}
           <div className="space-y-8">
             {/* Social Media */}
             <div className="terminal-window p-6">

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Github, Linkedin, Instagram, ArrowDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -67,7 +68,7 @@ const Hero = () => {
           <div className="flex justify-center mb-8">
             <div className="relative">
               <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQHxJY8wF6HQLQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721781834893?e=1738800000&v=beta&t=eSAGgF7i4HkdUeRKEQS8dEhzBRgKSJAx8bDhOFOLHuo"
+                src="https://i.ibb.co/67YCQZt8/1747823130339.jpg"
                 alt="Gustavo Alves"
                 className="w-32 h-32 rounded-full border-4 border-neon-blue shadow-lg shadow-neon-blue/20"
               />
@@ -148,12 +149,14 @@ const Hero = () => {
           {/* CTA Button */}
           <div className="pt-8">
             <Button
-              href="#ecocity"
               size="lg"
               className="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink text-black font-bold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 animate-glow-pulse"
+              asChild
             >
-              Explore EcoCity
-              <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+              <a href="#ecocity">
+                Explore EcoCity
+                <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+              </a>
             </Button>
           </div>
         </div>

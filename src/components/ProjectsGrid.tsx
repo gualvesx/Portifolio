@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -20,62 +21,61 @@ const ProjectsGrid = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'EcoCity',
-      description: 'Plataforma revolucionária para cidades inteligentes e sustentáveis, integrando Cloud Computing e tecnologias IoT.',
-      technologies: ['Firebase', 'TypeScript', 'React', 'AWS'],
+      title: 'Portifolio',
+      description: 'Portfólio pessoal desenvolvido com TypeScript, React e Tailwind CSS. Design cyberpunk com animações modernas.',
+      technologies: ['TypeScript', 'React', 'Tailwind CSS', 'Vite'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com/gualvesx/EcoCity',
-      demo: 'https://ecocity-801cc.web.app/',
+      github: 'https://github.com/gualvesx/Portifolio',
       category: 'Web'
     },
     {
       id: 2,
-      title: 'SustenTech',
-      description: 'Aplicação focada em sustentabilidade e tecnologia verde para monitoramento ambiental.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+      title: 'Tsuru',
+      description: 'Projeto pessoal desenvolvido em JavaScript com foco em funcionalidades modernas e interface clean.',
+      technologies: ['JavaScript', 'HTML', 'CSS', 'Node.js'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com/gualvesx/SustenTech',
+      github: 'https://github.com/gualvesx/Tsuru',
       category: 'Web'
     },
     {
       id: 3,
-      title: 'Cloud Solutions',
-      description: 'Conjunto de soluções cloud para otimização de recursos e infraestrutura sustentável.',
-      technologies: ['AWS', 'Lambda', 'CloudWatch', 'S3'],
+      title: 'App-CalculaLitro',
+      description: 'Aplicativo mobile para calcular consumo de combustível. Projeto desenvolvido para tarefas do SENAI.',
+      technologies: ['Kotlin', 'Android', 'XML', 'Material Design'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com/gualvesx',
-      category: 'Cloud'
+      github: 'https://github.com/gualvesx/App-CalculaLitro',
+      category: 'Mobile'
     },
     {
       id: 4,
-      title: 'IoT Green Monitor',
-      description: 'Sistema de monitoramento IoT para plantas e jardins inteligentes com alertas automáticos.',
-      technologies: ['Arduino', 'React Native', 'MQTT', 'Firebase'],
+      title: 'App-StudyCheck',
+      description: 'Aplicativo mobile para gerenciar estudos e controlar progresso acadêmico com interface intuitiva.',
+      technologies: ['Kotlin', 'Android', 'SQLite', 'Material Design'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com/gualvesx',
-      category: 'IoT'
+      github: 'https://github.com/gualvesx/App-StudyCheck',
+      category: 'Mobile'
     },
     {
       id: 5,
-      title: 'API Gateway',
-      description: 'Gateway de APIs para microserviços com autenticação e rate limiting.',
-      technologies: ['Node.js', 'Express', 'JWT', 'Redis'],
+      title: 'ADM-Users',
+      description: 'Sistema web para gerenciamento de usuários com interface administrativa completa e responsiva.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com/gualvesx',
+      github: 'https://github.com/gualvesx/ADM-Users',
       category: 'Web'
     },
     {
       id: 6,
-      title: 'Mobile Sustainability',
-      description: 'App mobile para acompanhamento de práticas sustentáveis e pegada de carbono.',
-      technologies: ['Kotlin', 'Android', 'Firebase', 'Google Maps'],
+      title: 'CorretorTexto-TEXTRIGHT',
+      description: 'Projeto inovador de correção de textos utilizando Inteligência Artificial para análise e sugestões.',
+      technologies: ['Python', 'AI/ML', 'Natural Language Processing', 'Flask'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com/gualvesx',
-      category: 'Mobile'
+      github: 'https://github.com/gualvesx/CorretorTexto-TEXTRIGHT',
+      category: 'AI'
     }
   ];
 
-  const filters = ['all', 'Web', 'Cloud', 'IoT', 'Mobile'];
+  const filters = ['all', 'Web', 'Mobile', 'AI'];
 
   const filteredProjects = selectedFilter === 'all' 
     ? projects 
@@ -189,13 +189,15 @@ const ProjectsGrid = () => {
         {/* Load More Button */}
         <div className="text-center mt-12">
           <Button
-            href="https://github.com/gualvesx"
             variant="outline"
             size="lg"
             className="neon-border bg-transparent hover:bg-gradient-to-r hover:from-neon-blue hover:to-neon-purple hover:text-black transition-all duration-300"
+            asChild
           >
-            Ver Mais Projetos no GitHub
-            <Github className="w-5 h-5 ml-2" />
+            <a href="https://github.com/gualvesx" target="_blank" rel="noopener noreferrer">
+              Ver Mais Projetos no GitHub
+              <Github className="w-5 h-5 ml-2" />
+            </a>
           </Button>
         </div>
       </div>

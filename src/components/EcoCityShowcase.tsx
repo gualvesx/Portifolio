@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -55,8 +56,8 @@ const EcoCityShowcase = () => {
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/khqovYBbZVU?si=sGppbNrUbpXdaotJ"
-                  title="EcoCity - Iniciativa Privada"
+                  src="https://www.youtube.com/embed/khqovYBbZVU?si=61ABYEoOhntkBMKf"
+                  title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
