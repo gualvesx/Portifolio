@@ -53,17 +53,16 @@ const EcoCityShowcase = () => {
             <div className="terminal-window p-6 h-96 overflow-hidden relative group">
               {/* Video Preview */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
-              <iframe
-                width="560"
-                height="315"
-                src="https://youtu.be/khqovYBbZVU?si=CVFdZpg60NmNPZeB"
-                title="EcoCity - Iniciativa Privada"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-                </div>
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/khqovYBbZVU?si=sGppbNrUbpXdaotJ"
+                  title="EcoCity - Iniciativa Privada"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
 
               {/* Hover Effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-cyber-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -85,18 +84,19 @@ const EcoCityShowcase = () => {
                 className="neon-border bg-transparent hover:bg-neon-blue/10 flex-1"
                 asChild
               >
-                <a href="https://github.com/EcoCity-GG/EcoCity" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/gualvesx/EcoCity" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2" />
                   Código Fonte
                 </a>
               </Button>
               <Button
                 className="bg-gradient-to-r from-neon-green to-neon-blue text-black hover:from-neon-blue hover:to-neon-purple flex-1 animate-glitch"
+                asChild
               >
-              <a href="https://ecocity-801cc.web.app/" target="_blank" rel="noopener noreferrer">
-                Acessar Site
-                <ArrowRight className="w-4 h-4 ml-2" />
-               </a>
+                <a href="https://ecocity-801cc.web.app/" target="_blank" rel="noopener noreferrer">
+                  Acessar Site
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
               </Button>
             </div>
           </div>

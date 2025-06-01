@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -21,66 +20,62 @@ const ProjectsGrid = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Neural Finance',
-      description: 'Plataforma de análise financeira com IA para predição de mercado e otimização de portfólio.',
-      technologies: ['Python', 'TensorFlow', 'React', 'FastAPI'],
+      title: 'EcoCity',
+      description: 'Plataforma revolucionária para cidades inteligentes e sustentáveis, integrando Cloud Computing e tecnologias IoT.',
+      technologies: ['Firebase', 'TypeScript', 'React', 'AWS'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com',
-      demo: 'https://neural-finance.com',
-      category: 'AI'
+      github: 'https://github.com/gualvesx/EcoCity',
+      demo: 'https://ecocity-801cc.web.app/',
+      category: 'Web'
     },
     {
       id: 2,
-      title: 'CryptoTracker Pro',
-      description: 'Dashboard em tempo real para tracking de criptomoedas com alertas personalizados.',
-      technologies: ['Vue.js', 'Node.js', 'WebSocket', 'Chart.js'],
+      title: 'SustenTech',
+      description: 'Aplicação focada em sustentabilidade e tecnologia verde para monitoramento ambiental.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com',
-      demo: 'https://cryptotracker.com',
+      github: 'https://github.com/gualvesx/SustenTech',
       category: 'Web'
     },
     {
       id: 3,
-      title: 'SmartHome IoT',
-      description: 'Sistema completo de automação residencial com controle via app e comandos de voz.',
-      technologies: ['Arduino', 'React Native', 'MQTT', 'Firebase'],
+      title: 'Cloud Solutions',
+      description: 'Conjunto de soluções cloud para otimização de recursos e infraestrutura sustentável.',
+      technologies: ['AWS', 'Lambda', 'CloudWatch', 'S3'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com',
-      demo: 'https://smarthome.com',
-      category: 'Web'
+      github: 'https://github.com/gualvesx',
+      category: 'Cloud'
     },
     {
       id: 4,
-      title: 'CodeMentor AI',
-      description: 'Assistente de programação com IA para code review e sugestões de otimização.',
-      technologies: ['Python', 'OpenAI', 'Docker', 'PostgreSQL'],
+      title: 'IoT Green Monitor',
+      description: 'Sistema de monitoramento IoT para plantas e jardins inteligentes com alertas automáticos.',
+      technologies: ['Arduino', 'React Native', 'MQTT', 'Firebase'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com',
-      category: 'AI'
+      github: 'https://github.com/gualvesx',
+      category: 'IoT'
     },
     {
       id: 5,
-      title: 'EcoTransport',
-      description: 'App de mobilidade urbana sustentável com rotas otimizadas e pegada de carbono.',
-      technologies: ['React Native', 'Google Maps', 'Node.js', 'MongoDB'],
+      title: 'API Gateway',
+      description: 'Gateway de APIs para microserviços com autenticação e rate limiting.',
+      technologies: ['Node.js', 'Express', 'JWT', 'Redis'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com',
-      demo: 'https://ecotransport.com',
+      github: 'https://github.com/gualvesx',
       category: 'Web'
     },
     {
       id: 6,
-      title: 'CloudWatch Dashboard',
-      description: 'Sistema de monitoramento cloud com métricas em tempo real e alertas automáticos.',
-      technologies: ['AWS', 'TypeScript', 'CloudWatch', 'Lambda'],
+      title: 'Mobile Sustainability',
+      description: 'App mobile para acompanhamento de práticas sustentáveis e pegada de carbono.',
+      technologies: ['Kotlin', 'Android', 'Firebase', 'Google Maps'],
       image: '/api/placeholder/400/250',
-      github: 'https://github.com',
-      demo: 'https://cloudwatch.com',
-      category: 'AI'
+      github: 'https://github.com/gualvesx',
+      category: 'Mobile'
     }
   ];
 
-  const filters = ['all', 'AI', 'Web'];
+  const filters = ['all', 'Web', 'Cloud', 'IoT', 'Mobile'];
 
   const filteredProjects = selectedFilter === 'all' 
     ? projects 

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Github, Linkedin, Instagram, ArrowDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -64,6 +63,18 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         {/* Main Content */}
         <div className="space-y-8">
+          {/* Profile Picture */}
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQHxJY8wF6HQLQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721781834893?e=1738800000&v=beta&t=eSAGgF7i4HkdUeRKEQS8dEhzBRgKSJAx8bDhOFOLHuo"
+                alt="Gustavo Alves"
+                className="w-32 h-32 rounded-full border-4 border-neon-blue shadow-lg shadow-neon-blue/20"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-neon-blue/20 to-neon-purple/20"></div>
+            </div>
+          </div>
+
           {/* Glitch Name Effect */}
           <div className="relative">
             <h1 
@@ -127,7 +138,7 @@ const Hero = () => {
               className="neon-border bg-transparent hover:bg-neon-pink/10 transition-all duration-300 group"
               asChild
             >
-              <a href="https://instagram.com/guh.alvxs" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/guh.alvxs/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-5 h-5 mr-2 group-hover:text-neon-pink transition-colors" />
                 Instagram
               </a>

@@ -25,36 +25,51 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    toast("Mensagem enviada com sucesso! 🚀", {
-      description: "Retornarei o contato em breve."
-    });
-    
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      // Criar link mailto para enviar email
+      const subject = encodeURIComponent(`Nova mensagem de ${formData.name} - Portfolio`);
+      const body = encodeURIComponent(
+        `Nome: ${formData.name}\nEmail: ${formData.email}\n\nMensagem:\n${formData.message}`
+      );
+      const mailtoLink = `mailto:gustavo.sesi.bol@gmail.com?subject=${subject}&body=${body}`;
+      
+      // Abrir cliente de email
+      window.location.href = mailtoLink;
+      
+      toast("Email preparado! 📧", {
+        description: "Seu cliente de email será aberto para enviar a mensagem."
+      });
+      
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      toast("Erro ao preparar email", {
+        description: "Tente novamente ou entre em contato diretamente.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const socialLinks = [
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com',
+      url: 'https://github.com/gualvesx',
       color: 'hover:text-neon-blue',
       description: 'Explore meu código'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/gustavo-alves-761874362/',
       color: 'hover:text-neon-purple',
       description: 'Conecte-se comigo'
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      url: 'https://instagram.com',
+      url: 'https://www.instagram.com/guh.alvxs/',
       color: 'hover:text-neon-pink',
       description: 'Acompanhe minha jornada'
     }
@@ -141,7 +156,7 @@ const ContactSection = () => {
                 {isSubmitting ? (
                   <div className="flex items-center gap-2">
                     <div className="loader"></div>
-                    Enviando...
+                    Preparando email...
                   </div>
                 ) : (
                   'Enviar Mensagem'
@@ -153,8 +168,8 @@ const ContactSection = () => {
             <div className="mt-6 space-y-1 font-mono text-sm">
               <div className="text-neon-green">$ form.validate()</div>
               <div className="text-gray-400">✓ All fields validated</div>
-              <div className="text-neon-blue">$ await sendMessage()</div>
-              <div className="text-gray-400 animate-pulse">{'>'} Ready to send...</div>
+              <div className="text-neon-blue">$ prepare mailto link</div>
+              <div className="text-gray-400 animate-pulse">{'>'} Ready to send email...</div>
             </div>
           </div>
 
